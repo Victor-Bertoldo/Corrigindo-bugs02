@@ -1,0 +1,131 @@
+/* O background Linear-gradient estava incorreto com 90deg */
+body {
+    margin: 0 auto;
+  
+    font-family: "Open Sans", sans-serif;
+  
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  
+    min-height: 100vh;
+  }
+  
+  /* Antes de corrigir não havia uma tamanho fixo a página */
+  .page {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 65px;
+  }
+
+  /* Não possuia um display flex, portanto na pagina ficava um elemento abaixo do outro */
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+
+  
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #1f1534;
+    text-decoration: none;
+  }
+  
+  ul li a {
+      opacity: 0.5;
+  }
+  
+  ul li a:hover {
+    font-weight: bold;
+    opacity: 1;
+  }
+  
+  h1,
+  ul {
+    font-family: "Mulish", sans-serif;
+  }
+  
+  h1 {
+    font-size: 49px;
+    line-height: 56px;
+    color: #1f1534;
+  
+    font-weight: normal;
+  
+    width: 490px;
+  }
+  
+  h1 span {
+    color: #89c5cc;
+    font-weight: bold;
+  }
+  
+  section p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #7d7987;
+  
+    margin: 40px 0;
+  }
+  
+  section button {
+
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+  
+    background: #69B99D;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 32px 15px;
+    gap: 10px;
+    
+    border: none;
+    border-radius: 4px;
+  
+    cursor: pointer;
+  }
+  
+  button:hover {
+      background: #4EA788;
+  }
+  
+  footer {
+    font-size: 14px;
+    line-height: 28px;
+  
+    text-align: center;
+  
+    margin-top: 80px;
+  }
+
+  footer img {
+    display: flex;
+    justify-content: left;
+  }
+  
+  footer a {
+    font-weight: bold;
+  }
+  
+  #balls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  
